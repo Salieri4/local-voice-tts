@@ -1,0 +1,7 @@
+# server.py 的额外依赖。
+# 注意：torch / torchaudio / transformers / funasr 等由 GPT-SoVITS 整合包自带，
+# 这里只列整合包里可能缺失的部分。装到整合包的 runtime 里：
+#   <pkg>/runtime/python.exe -m pip install -r requirements.txt
+
+soundfile>=0.12
+numpy

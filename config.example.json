@@ -1,0 +1,25 @@
+{
+  "_comment": "复制为 config.json 后按实际路径修改。所有字段都有默认值，最少只需改 gpt_sovits_dir。",
+  "gpt_sovits_dir": "D:/path/to/GPT-SoVITS-v2pro-20250604",
+  "python_exec": "runtime/python.exe",
+  "host": "127.0.0.1",
+  "port": 9876,
+  "voice": {
+    "name": "my-voice",
+    "sovits_weights": "SoVITS_weights_v2Pro/my-voice_e8_s1128.pth",
+    "gpt_weights": null,
+    "version": "v2Pro",
+    "ref_audio": "data/ref_zh.wav",
+    "ref_text": "这里填参考音频对应的文本，必须与实际音频一致",
+    "ref_lang": "zh"
+  },
+  "playback": {
+    "ffplay_path": "ffmpeg-master-latest-win64-lgpl-shared/bin/ffplay.exe",
+    "sample_rate": 32000
+  },
+  "edge": {
+    "enabled": true,
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": "+6%"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "local-voice-tts",
+  "version": "0.1.0",
+  "description": "把 GPT-SoVITS 封装成常驻本地语音服务：流式播放，首声约 5 秒，无缝",
+  "type": "module",
+  "bin": {
+    "lvt": "client/say.mjs"
+  },
+  "scripts": {
+    "say": "node client/say.mjs",
+    "serve": "node -e \"console.log('用整合包的 Python 启动：<pkg>/runtime/python.exe server/server.py --config config.json')\""
+  },
+  "dependencies": {
+    "msedge-tts": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
